@@ -176,7 +176,9 @@ header {
 
 
 
-/* Filtros */
+
+
+/* Em desenvolvimento */
 .filters {
   max-width: 600px;
   margin: 40px auto;
@@ -217,7 +219,10 @@ header {
   color: #bbb;
 }
 
-/* Rodapé */
+
+
+
+
 footer {
   display: flex;
   justify-content: space-between;
