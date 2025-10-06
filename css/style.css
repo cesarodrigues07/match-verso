@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url("/img/bg/bg-purple.jpg");
+  background-image: url("/assets/img/bg/bg-purple.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -111,7 +111,7 @@ header {
 }
 
 .hero {
-  background-image: linear-gradient(#00000099, #00000099), url("/img/bg/gamer-bg.jpg");
+  background-image: linear-gradient(#00000099, #00000099), url("/assets/img/bg/gamer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
