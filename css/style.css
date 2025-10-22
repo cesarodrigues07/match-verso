@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -8,12 +12,13 @@
 }
 
 body {
-  background-image: url("/assets/img/bg/bg-purple.jpg");
+  background-image: url("/match-verso/assets/img/bg/bg-purple.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: #eee;
   line-height: 1.5;
+  min-height: 100vh;
 }
 
 header {
@@ -23,6 +28,7 @@ header {
   align-items: center;
   background: #24252a;
   border-bottom: 2px solid #6c63ff;
+  box-shadow: 0 0 10px #6b63ff45;
 }
 
 .nav-bar {
@@ -46,6 +52,9 @@ header {
 .nav-list {
   display: flex;
   align-items: center;
+  position: absolute;
+  right: 51%;
+  transform: translateX(50%);
 }
 
 .nav-list ul {
@@ -111,7 +120,7 @@ header {
 }
 
 .hero {
-  background-image: linear-gradient(#00000099, #00000099), url("/assets/img/bg/gamer-bg.jpg");
+  background-image: linear-gradient(#00000099, #00000099), url("/match-verso/assets/img/bg/gamer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -119,7 +128,8 @@ header {
   padding: 50px 20px;
   height: 100%;
 }
- .name {
+
+.name {
   font-size: 6rem;
   font-weight: 800;
   margin-bottom: 10px;
@@ -169,54 +179,10 @@ header {
   border: 2px solid transparent;
   cursor: pointer;
 }
+
 .cards-item:hover {
   border: 2px solid #6c63ff;
   transition: transform 0.3s, border 0.3s;
-}
-
-
-
-
-
-/* Em desenvolvimento */
-.filters {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
-  background: #1f1f1f;
-  border-radius: 8px;
-}
-
-.filters h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  color: #6c63ff;
-}
-
-.filters form {
-  display: flex;
-  flex-direction: column;
-}
-
-.filters label {
-  margin-top: 15px;
-  margin-bottom: 5px;
-  font-size: 0.9rem;
-}
-
-.filters select,
-.filters input {
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  margin-bottom: 10px;
-  background: #2a2a2a;
-  color: #eee;
-}
-
-.filters input::placeholder {
-  color: #bbb;
 }
 
 
@@ -231,7 +197,9 @@ footer {
   color: #bbb;
   background: #24252a;
   border-top: 2px solid #6c63ff;
+  box-shadow: 0 0 10px #6b63ff45;
   font-size: 0.9rem;
+  bottom: 0;
 }
 
 footer a {
@@ -241,5 +209,258 @@ footer a {
 }
 
 footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+/* Login Page CSS */
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("/match-verso/assets/img/bg/bg-purple.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.login-content {
+  color: #eee;
+  background-color: #24252a;
+  border: 2px solid #6c63ff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  box-shadow: 0 0 10px #6b63ff45;
+  width: 500px;
+}
+
+.login-content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333339;
+  border: none;
+  outline: none;
+  padding: 0 15px;
+  font-size: 1rem;
+  color: #eee;
+  border-radius: 5px;
+}
+
+.input-box i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c63ff;
+  font-size: 1.2rem;
+  cursor: text;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remember-forgot input {
+  accent-color: #6c63ff;
+  margin-right: 7px;
+  scale: 1.2rem;
+}
+
+.remember-forgot label {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.remember-forgot a {
+  color: #6c63ff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.input-box button {
+  width: 100%;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  margin-top: 0px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.input-box button:hover {
+  background: #574dcf;
+}
+
+.register-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.register-link a {
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* Register Page CSS */
+
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("/match-verso/assets/img/bg/bg-purple.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.register-content {
+  color: #eee;
+  background-color: #24252a;
+  border: 2px solid #6c63ff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  box-shadow: 0 0 10px #6b63ff45;
+  width: 500px;
+}
+
+.register-content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333339;
+  border: none;
+  outline: none;
+  padding: 0 15px;
+  font-size: 1rem;
+  color: #eee;
+  border-radius: 5px;
+}
+
+.input-box i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c63ff;
+  font-size: 1.2rem;
+  cursor: text;
+}
+
+.terms-conditions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.terms-conditions input {
+  accent-color: #6c63ff;
+  margin-right: 7px;
+  scale: 1.2rem;
+}
+
+.terms-conditions label {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.terms-conditions a {
+  color: #6c63ff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.terms-conditions a:hover {
+  text-decoration: underline;
+}
+
+.input-box button {
+  width: 100%;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  margin-top: 0px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.input-box button:hover {
+  background: #574dcf;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+.login-link a {
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-link a:hover {
   text-decoration: underline;
 }
