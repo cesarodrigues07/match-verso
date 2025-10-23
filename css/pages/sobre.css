@@ -75,7 +75,7 @@
     font-size: 20px;
     line-height: 1.6;
     text-align: justify;
-    padding: 40px 50px 40px 125px;
+    padding: 50px 50px 50px 125px;
     background: linear-gradient(to left, #00000060, #00000000);
 }
 
@@ -91,7 +91,7 @@
     font-size: 20px;
     line-height: 1.6;
     text-align: justify;
-    padding: 40px 125px 40px 50px;
+    padding: 50px 125px 50px 50px;
     background: linear-gradient(to right, #00000060, #00000000);
 }
 
@@ -106,7 +106,7 @@
     font-size: 20px;
     line-height: 1.6;
     text-align: justify;
-    padding: 40px 50px 40px 125px;
+    padding: 50px 50px 50px 125px;
     background: linear-gradient(to left, #00000060, #00000000);
 }
 
@@ -121,7 +121,7 @@
     font-size: 20px;
     line-height: 1.6;
     text-align: justify;
-    padding: 40px 125px 40px 50px;
+    padding: 50px 125px 50px 50px;
     background: linear-gradient(to right, #00000060, #00000000);
 }
 
