@@ -1,0 +1,131 @@
+.hero-about {
+    background-color: #12121280;
+    height: 100vh;
+    box-shadow: #000000 0px 0px 50px 0px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-img {
+    margin: 45px 20px 20px 150px;
+    height: 575px;
+    width: 350px;
+    border: 1px solid #00000025;
+    border-radius: 3px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.233) 0px 2px 4px 0px, rgba(0, 0, 0, 0.32) 0px 2px 16px 0px;
+}
+
+.text-about {
+    width: 55%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.name-about {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+.slogan-about {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.btn-about {
+  width: 200px;
+  background: #6c63ff;
+  color: white;
+  border: none;
+  padding: 12px 0;
+  padding-right: 20px;
+  margin-top: 0px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 50px;
+}
+
+.btn-about:hover {
+  background: #574dcf;
+}
+
+.btn-about i {
+    position: absolute;
+    font-size: 1.5rem;
+}
+
+.what-is {
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 40px 50px 40px 125px;
+    background: linear-gradient(to left, #00000060, #00000000);
+}
+
+.what-is h1 {
+    font-weight: 500;
+    text-align: right;
+}
+
+.objetive {
+    width: 100%;
+    color: #fff;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 40px 125px 40px 50px;
+    background: linear-gradient(to right, #00000060, #00000000);
+}
+
+.objetive h1 {
+    font-weight: 500;
+    text-align: left;
+}
+
+.funtion {
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 40px 50px 40px 125px;
+    background: linear-gradient(to left, #00000060, #00000000);
+}
+
+.funtion h1 {
+    font-weight: 500;
+    text-align: right;
+}
+
+.motivation {
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: justify;
+    padding: 40px 125px 40px 50px;
+    background: linear-gradient(to right, #00000060, #00000000);
+}
+
+.motivation h1 {
+    font-weight: 500;
+    text-align: left;
+}
