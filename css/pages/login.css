@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
   background-image: url("../assets/img/bg/bg-purple.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -136,7 +136,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
   background-image: url("../assets/img/bg/bg-purple.jpg");
   background-repeat: no-repeat;
   background-size: cover;
