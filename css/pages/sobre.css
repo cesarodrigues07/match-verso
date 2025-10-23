@@ -43,25 +43,25 @@
 }
 
 .btn-about {
-  width: 200px;
-  background: #6c63ff;
-  color: white;
-  border: none;
-  padding: 12px 0;
-  padding-right: 20px;
-  margin-top: 0px;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  font-size: 1.2rem;
-  font-weight: 700;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
-  margin-top: 50px;
+    width: 200px;
+    background: #6c63ff;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    padding-right: 20px;
+    margin-top: 0px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 50px;
 }
 
 .btn-about:hover {
-  background: #574dcf;
+    background: #574dcf;
 }
 
 .btn-about i {
