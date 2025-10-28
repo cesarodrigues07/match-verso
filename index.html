@@ -1,111 +1,180 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Match Verso</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/logo/logo-mv.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Match Verso</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="shortcut icon" href="assets/img/logo/logo-mv.png" type="image/x-icon" />
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <div class="logo">
+          <a href="index.html">
+            <img
+              src="assets/img/logo/logo-mv.png"
+              alt="Logo Match Verso"
+              class="logo-mv"
+            />
+          </a>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="pages/partidas.html" class="nav-link">Partidas</a>
+            </li>
+            <li class="nav-item">
+              <a href="pages/campeonatos.html" class="nav-link">Campeonatos</a>
+            </li>
+            <li class="nav-item">
+              <a href="pages/sobre.html" class="nav-link">Sobre</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-login">
+          <a href="pages/login.html"
+            ><button class="login-button">Login</button></a
+          >
+          <a href="pages/cadastro.html"
+            ><button class="cadastro-button">Cadastro</button></a
+          >
+        </div>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <nav class="nav-bar">
-      <div class="logo">
-        <a href="index.html">
-          <img src="assets/img/logo/logo-mv.png" alt="Logo Match Verso" class="logo-mv" />
-        </a>
-      </div>
-      <div class="nav-list">
-        <ul>
-          <li class="nav-item">
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="pages/partidas.html" class="nav-link">Partidas</a>
-          </li>
-          <li class="nav-item">
-            <a href="pages/campeonatos.html" class="nav-link">Campeonatos</a>
-          </li>
-          <li class="nav-item">
-            <a href="pages/sobre.html" class="nav-link">Sobre</a>
-          </li>
-        </ul>
-      </div>
-      <div class="nav-login">
-        <a href="pages/login.html"><button class="login-button">Login</button></a>
-        <a href="pages/cadastro.html"><button class="cadastro-button">Cadastro</button></a>
-      </div>
-    </nav>
-  </header>
+    <main>
+      <section class="hero">
+        <h1 class="name">MATCH VERSO</h1>
+        <p class="slogan">
+          Entre para o universo dos campeonatos online! O Match Verso facilita a
+          criação, organização e participação de partidas amistosas e torneios
+          de e-sports, reunindo a comunidade gamer em uma única plataforma!
+        </p>
+        <button
+          class="btn-start"
+          onclick="window.location.href='#choose-route'"
+        >
+          COMEÇAR AGORA!
+        </button>
+        <div class="cards-list">
+          <a href="#cs2">
+            <img
+              src="assets/img/cards/card-cs2.jpg"
+              class="cards-item"
+              alt="CS2 Card"
+          /></a>
+          <a href="#eafc">
+            <img
+              src="assets/img/cards/card-eafc26.jpg"
+              class="cards-item"
+              alt="EA FC Card"
+          /></a>
+          <a href="#fort">
+            <img
+              src="assets/img/cards/card-fortnite.jpg"
+              class="cards-item"
+              alt="Fortnite Card"
+          /></a>
+          <a href="#lol">
+            <img
+              src="assets/img/cards/card-lol.jpg"
+              class="cards-item"
+              alt="LoL Card"
+          /></a>
+          <a href="#pubg">
+            <img
+              src="assets/img/cards/card-pubg.jpg"
+              class="cards-item"
+              alt="PUBG Card"
+          /></a>
+          <a href="#rl">
+            <img
+              src="assets/img/cards/card-rl.jpg"
+              class="cards-item"
+              alt="Rocket League Card"
+          /></a>
+          <a href="#vava">
+            <img
+              src="assets/img/cards/card-valorant.jpg"
+              class="cards-item"
+              alt="Valorant Card"
+          /></a>
+        </div>
+      </section>
 
-  <main>
-    <section class="hero">
-      <h1 class="name">MATCH VERSO</h1>
-      <p class="slogan">
-        Entre para o universo dos campeonatos online! O Match Verso facilita a
-        criação, organização e participação de partidas amistosas e torneios de e-sports, reunindo
-        a comunidade gamer em uma única plataforma!
+      <section class="choose-route" id="choose-route">
+        <h2>ESCOLHA SEU CAMINHO</h2>
+        <div class="content-route">
+          <div class="match">
+            <h3>Modo Partida <i class="bx bx-joystick"></i></h3>
+            <a href="pages/partidas.html">
+              <img
+                src="assets/img/route/match.jpg"
+                alt="Match Image"
+                class="route-img"
+            /></a>
+            <p>
+              Entre no ritmo das partidas rápidas! Aqui você pode criar salas
+              pra jogar com os amigos ou entrar em disputas aleatórias.
+            </p>
+            <a href="#match"
+              ><input type="button" value="Criar Partida" class="create-bnt"
+            /></a>
+            <a href="#camp"
+              ><input type="button" value="Entrar na Partida" class="find-bnt"
+            /></a>
+          </div>
+          <div class="camp">
+            <h3>Modo Campeonato <i class="bx bx-trophy"></i></h3>
+            <a href="pages/campeonatos.html">
+              <img
+                src="assets/img/route/camp.jpg"
+                alt="Camp Image"
+                class="route-img"
+            /></a>
+            <p>
+              Mostre quem é o verdadeiro campeão! No modo campeonato, você
+              organiza ou participa de torneios completos.
+            </p>
+            <a href="#camp"
+              ><input type="button" value="Criar Torneio" class="create-bnt"
+            /></a>
+            <a href="#camp"
+              ><input type="button" value="Entrar no Torneio" class="find-bnt"
+            /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p class="copy">&copy; 2025 Match Verso. Todos os direitos reservados.</p>
+      <p class="credits">
+        Created by:
+        <a href="https://www.instagram.com/cesarodrigues_07/" target="_blank"
+          >César</a
+        >,
+        <a href="https://www.instagram.com/eo_silas13/" target="_blank"
+          >Silas</a
+        >
+        e
+        <a href="https://www.instagram.com/yurii_xdkkj/" target="_blank"
+          >Yuri</a
+        >
       </p>
-      <button class="btn-start" onclick="window.location.href='#choose-route'">
-        COMEÇAR AGORA!
-      </button>
-      <div class="cards-list">
-        <a href="#cs2">
-          <img src="assets/img/cards/card-cs2.jpg" class="cards-item" alt="CS2 Card" /></a>
-        <a href="#eafc">
-          <img src="assets/img/cards/card-eafc26.jpg" class="cards-item" alt="EA FC Card" /></a>
-        <a href="#fort">
-          <img src="assets/img/cards/card-fortnite.jpg" class="cards-item" alt="Fortnite Card" /></a>
-        <a href="#lol">
-          <img src="assets/img/cards/card-lol.jpg" class="cards-item" alt="LoL Card" /></a>
-        <a href="#pubg">
-          <img src="assets/img/cards/card-pubg.jpg" class="cards-item" alt="PUBG Card" /></a>
-        <a href="#rl">
-          <img src="assets/img/cards/card-rl.jpg" class="cards-item" alt="Rocket League Card" /></a>
-        <a href="#vava">
-          <img src="assets/img/cards/card-valorant.jpg" class="cards-item" alt="Valorant Card" /></a>
-      </div>
-    </section>
-
-    <section class="choose-route" id="choose-route">
-      <h2>ESCOLHA SEU CAMINHO</h2>
-      <div class="content-route">
-        <div class="match">
-          <h3>Modo Partida <i class='bx  bx-joystick'></i></h3>
-          <a href="pages/partidas.html">
-            <img src="assets/img/route/match.jpg" alt="Match Image" class="route-img" /></a>
-          <p>Entre no ritmo das partidas rápidas! Aqui você pode criar salas pra jogar com os amigos ou entrar em
-            disputas aleatórias.</p>
-          <a href="#match"><input type="button" value="Criar Partida" class="create-bnt" /></a>
-          <a href="#camp"><input type="button" value="Entrar na Partida" class="find-bnt" /></a>
-        </div>
-        <div class="camp">
-          <h3>Modo Campeonato <i class='bx  bx-trophy'></i></h3>
-          <a href="pages/campeonatos.html">
-            <img src="assets/img/route/camp.jpg" alt="Camp Image" class="route-img" /></a>
-          <p>Mostre quem é o verdadeiro campeão! No modo campeonato, você organiza ou participa de torneios completos.
-          </p>
-          <a href="#camp"><input type="button" value="Criar Torneio" class="create-bnt" /></a>
-          <a href="#camp"><input type="button" value="Entrar no Torneio" class="find-bnt" /></a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <p class="copy">&copy; 2025 Match Verso. Todos os direitos reservados.</p>
-    <p class="credits">
-      Created by:
-      <a href="https://www.instagram.com/cesarodrigues_07/" target="_blank">César</a>,
-      <a href="https://www.instagram.com/eo_silas13/" target="_blank">Silas</a>
-      e
-      <a href="https://www.instagram.com/yurii_xdkkj/" target="_blank">Yuri</a>
-    </p>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
