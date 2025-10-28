@@ -28,7 +28,7 @@ header {
   align-items: center;
   background: #24252a;
   border-bottom: 2px solid #6c63ff;
-  box-shadow: 0 0 10px #6b63ff45;
+  box-shadow: 0 0 10px 5px #6b63ff45;
 }
 
 .nav-bar {
@@ -61,9 +61,14 @@ header {
   margin-left: 30px;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 25px;
   align-items: center;
   list-style: none;
+  transition: 0.3s;
+}
+
+.nav-item:hover {
+  transform: scale(1.05);
 }
 
 .nav-link {
@@ -95,11 +100,12 @@ header {
   font-weight: 500;
   font-size: 1.15rem;
   cursor: pointer;
-  transition: color 0.3s;
+  transition: 0.3s;
 }
 
 .login-button:hover {
   color: #6c63ff;
+  transform: scale(1.03);
 }
 
 .cadastro-button {
@@ -112,11 +118,12 @@ header {
   padding: 8px 15px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: 0.3s;
 }
 
 .cadastro-button:hover {
   background: #574dcf;
+  transform: scale(1.03);
 }
 
 .hero {
@@ -155,10 +162,11 @@ header {
   font-weight: 700;
   border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: 0.3s;
 }
 
 .btn-start:hover {
+  transform: scale(1.05);
   background: #574dcf;
 }
 
@@ -183,7 +191,97 @@ header {
 
 .cards-item:hover {
   border: 2px solid #6c63ff;
-  transition: transform 0.3s, border 0.3s;
+  transition: 0.3s;
+  transform: scale(1.05);
+
+}
+
+.choose-route {
+  background-color: #00000010;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.choose-route h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.choose-route h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.choose-route i {
+  position: relative;
+  top: 2px;
+}
+
+.content-route {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.route-img {
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 2px solid #6c63ff;
+  box-shadow: 0 0 10px 5px #6b63ff45;
+  transition: 0.3s;
+}
+
+.route-img:hover {
+  transform: scale(1.03);
+  border: 2px solid #574dcf;
+}
+
+.match {
+  max-width: 500px;
+}
+
+.camp {
+  max-width: 500px;
+}
+
+.create-bnt {
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-decoration: none;
+  margin: 15px 15px;
+  transition: 0.3s;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.create-bnt:hover {
+  background-color: #574dcf;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.find-bnt {
+  background-color: transparent;
+  color: #6c63ff;
+  border: 2px solid #6c63ff;
+  border-radius: 5px;
+  padding: 8px 13px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.find-bnt:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 footer {
@@ -194,7 +292,7 @@ footer {
   color: #bbb;
   background: #24252a;
   border-top: 2px solid #6c63ff;
-  box-shadow: 0 0 10px #6b63ff45;
+  box-shadow: 0 0 10px 5px #6b63ff45;
   font-size: 0.9rem;
   bottom: auto;
 }
