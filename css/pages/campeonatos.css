@@ -29,3 +29,18 @@
     display: flex;
     margin: -10px auto 30px;
 }
+
+.keys-background {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.275);
+    justify-content: space-between;
+    margin: 20px auto;  
+    width: 90%;
+    height: auto;
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+
+.keys {
+    display: none;
+}
