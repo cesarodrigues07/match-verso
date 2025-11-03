@@ -29,3 +29,49 @@
     display: flex;
     margin: -10px auto 30px;
 }
+
+.keys-background {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.275);
+    justify-content: space-between;
+    margin: 20px auto;  
+    width: 90%;
+    height: auto;
+    padding: 25px 40px;
+    border-radius: 12px;
+}
+
+.keys {
+    display: none;
+}
+
+.match-conteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 20px;
+  position: relative;
+  width: 100%;
+}
+
+.match-conteiner h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+  
+}
+
+.tab-line {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 75%;
+  background: linear-gradient(to right, #6c63ff, transparent);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+footer {
+    top: 100vh;
+}

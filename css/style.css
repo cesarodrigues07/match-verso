@@ -14,8 +14,8 @@ html {
 body {
   background-image: url("../assets/img/bg/bg-purple.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   color: #eee;
   line-height: 1.5;
   min-height: 100vh;
@@ -124,6 +124,55 @@ header {
 .cadastro-button:hover {
   background: #574dcf;
   transform: scale(1.03);
+}
+
+.login-perfil {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-nome {
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.user-pfp {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #6c63ff;
+}
+
+.perfil-opcoes {
+  display: grid;
+  gap: 5px;
+}
+
+.btn-conta {
+  background-color: #7a5cf5;
+  color: white;
+  border: none;
+  padding: 4px 7px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+  margin-left: 8px;
+}
+
+.btn-conta:hover {
+  background-color: #9a82ff;
+}
+
+.btn-sair {
+  background-color: #d84b4b;
+
+}
+
+.btn-sair:hover {
+  background-color: #ff6b6b;
 }
 
 .hero {
@@ -295,6 +344,8 @@ footer {
   box-shadow: 0 0 10px 5px #6b63ff45;
   font-size: 0.9rem;
   bottom: auto;
+  position: sticky;
+  z-index: 1000;
 }
 
 footer a {

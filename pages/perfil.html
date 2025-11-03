@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil - Match Verso</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/pages/perfil.css">
+  <link rel="shortcut icon" href="../assets/img/logo/logo-mv.png" type="image/x-icon" />
+
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../assets/img/logo/logo-mv.png" alt="Logo Match Verso" class="logo-mv" />
+        </a>
+      </div>
+
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="partidas.html" class="nav-link">Partidas</a>
+          </li>
+          <li class="nav-item">
+            <a href="campeonatos.html" class="nav-link">Campeonatos</a>
+          </li>
+          <li class="nav-item">
+            <a href="sobre.html" class="nav-link">Sobre</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-login">
+        <a href="login.html"><button class="login-button">Login</button></a>
+        <a href="cadastro.html"><button class="cadastro-button">Cadastro</button></a>
+      </div>
+    </nav>
+  </header>
+
+
+  <div class="perfil-conteiner">
+    <h1>Sua Conta</h1>
+    <div class="pfp-edit">
+      <img src="../assets/img/pfp.jpg" alt="Foto de perfil" id="fotoPerfil" class="perfil-foto" />
+      <label for="fotoInput" class="pfp-change"><i class='bx bx-edit'></i></label>
+      <input type="file" id="fotoInput" accept="image/*" />
+    </div>
+  
+    <div class="perfil-edit">
+      <div class="user-inf">
+        <div class="user-name">Nome: <span><h2 id="nomeUsuario">Usuário</h2></span></div>
+        <div class="user-email">Email:<span id="emailUsuario">email@exemplo.com</span></div>
+        <div class="user-pass">Senha:<span id="senhaUsuario" class="senha-oculta">••••••••</span></div>
+      </div>
+
+      <button id="editarPerfil" class="btn-perfil">Editar Perfil</button>
+      <button id="mostrarSenha" class="btn-perfil" style="background-color:#444;">Mostrar Senha</button>
+      <button id="sair" class="btn-perfil" style="background-color:#d84b4b;">Sair</button>
+    </div>
+  </div>
+
+    <footer>
+      <p class="copy">&copy; 2025 Match Verso. Todos os direitos reservados.</p>
+      <p class="credits">
+        Created by:
+        <a href="https://www.instagram.com/cesarodrigues_07/" target="_blank">César</a>,
+        <a href="https://www.instagram.com/eo_silas13/" target="_blank">Silas</a>
+        e
+        <a href="https://www.instagram.com/yurii_xdkkj/" target="_blank">Yuri</a>
+      </p>
+    </footer>
+  <script src="../js/main.js"></script>
+  <script src="../js/pages/perfil.js"></script>
+</body>
+
+</html>

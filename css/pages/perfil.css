@@ -1,0 +1,123 @@
+footer {
+  top: 100vh;
+}
+
+.perfil-conteiner {
+  background: #24252a;
+  border-radius: 10px;
+  width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  border: 2px solid #6c63ff;
+  box-shadow: 0 0 10px 5px #6b63ff45;
+}
+
+.perfil-conteiner h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.pfp-edit {
+  position: relative;
+  display: inline-block;
+}
+
+.perfil-foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #7a5cf5;
+}
+
+.pfp-change {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #7a5cf5;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+  transition: 0.2s;
+}
+
+.pfp-change:hover {
+  background: #9a82ff;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.perfil-edit {
+  margin-top: 20px;
+}
+
+.btn-perfil {
+  margin-top: 15px;
+  display: block;
+  width: 100%;
+  background: #7a5cf5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 15px;
+}
+
+.btn-perfil:hover {
+  background: #9a82ff;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.senha-oculta {
+  font-size: 1rem;
+  color: #fff;
+  letter-spacing: 1px;
+  user-select: none;
+}
+
+.user-inf {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.user-inf span {
+  background-color: #303030;
+  min-width: 275px;
+  border: 1px solid #202020;
+  border-radius: 5px;
+  padding: 3px;
+  
+}
+
+.user-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-name h2 {
+  font-size: medium;
+  font-weight: normal;
+}
+
+.user-email {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-pass {
+  display: flex;
+  justify-content: space-between;
+}

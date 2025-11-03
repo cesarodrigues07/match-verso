@@ -14,9 +14,9 @@
 .login-content {
   color: #eee;
   background-color: #24252a;
-  border: 2px solid #6c63ff;
   border-radius: 10px;
   padding: 30px 40px;
+  border: 2px solid #6c63ff;
   box-shadow: 0 0 10px #6b63ff45;
   width: 500px;
 }
@@ -217,4 +217,8 @@
 
 .login-link a:hover {
   text-decoration: underline;
+}
+
+footer {
+  top: 100vh;
 }

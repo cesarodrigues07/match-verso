@@ -44,3 +44,7 @@
 .keys {
     display: none;
 }
+
+footer {
+    top: 100vh;
+}
