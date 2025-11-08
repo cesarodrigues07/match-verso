@@ -3,11 +3,11 @@ const formCad = document.querySelector("form");
 formCad.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  const usuario = formCad
-    .querySelector('input[placeholder="Usuário"]')
-    .value.trim();
   const email = formCad
     .querySelector('input[placeholder="Email"]')
+    .value.trim();
+  const usuario = formCad
+    .querySelector('input[placeholder="Usuário"]')
     .value.trim();
   const senha = formCad.querySelector('input[placeholder="Senha"]').value;
 

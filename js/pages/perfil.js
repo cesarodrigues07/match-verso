@@ -38,22 +38,46 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Editar nome / email
-  btnEditar.addEventListener("click", () => {
-    const novoNome = prompt("Novo nome de usuário:", user.usuario);
-    const novoEmail = prompt("Novo email:", user.email);
+const Elnome = document.getElementById("nomeUsuario");
+const Elemail = document.getElementById("emailUsuario");
+const Elsenha = document.getElementById("senhaUsuario");
 
-    if (novoNome) user.usuario = novoNome;
-    if (novoEmail) user.email = novoEmail;
+const inputNome = document.getElementById("inputNome");
+const inputEmail = document.getElementById("inputEmail");
+const inputSenha = document.getElementById("inputSenha");
 
-    nomeEl.textContent = user.usuario;
-    emailEl.textContent = user.email;
+const btnSalvarPerfil = document.getElementById("salvarPerfil"); // troquei aqui
 
-    localStorage.setItem("current_user", JSON.stringify(user));
-    localStorage.setItem("mv_user_global", JSON.stringify(user));
-    localStorage.setItem("user", JSON.stringify(user));
+let userx = JSON.parse(localStorage.getItem("current_user")) || {};
 
-    alert("Perfil atualizado!");
-  });
+nomeEl.textContent = userx.usuario || "Usuário";
+emailEl.textContent = userx.email || "email@exemplo.com";
+senhaEl.textContent = userx.senha ? "•".repeat(userx.senha.length) : "••••••••";
+
+btnSalvarPerfil.addEventListener("click", () => {
+  const novoNome = inputNome.value.trim();
+  const novoEmail = inputEmail.value.trim();
+  const novaSenha = inputSenha.value.trim();
+
+  if (!novoNome || !novoEmail || !novaSenha) {
+    alert("Preencha todos os campos");
+    return;
+  }
+
+  user.usuario = novoNome;
+  user.email = novoEmail;
+  user.senha = novaSenha;
+
+  Elnome.textContent = user.usuario;
+  Elemail.textContent = user.email;
+  Elsenha.textContent = "•".repeat(user.senha.length);
+
+  localStorage.setItem("current_user", JSON.stringify(user));
+  localStorage.setItem("mv_user_global", JSON.stringify(user));
+  localStorage.setItem("user", JSON.stringify(user));
+
+  alert("Perfil atualizado! 🔥");
+});
 
   // Trocar foto de perfil
   fotoInput.addEventListener("change", (e) => {

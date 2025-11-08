@@ -1,0 +1,13 @@
+body {
+    font-family: Inter, sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    line-height: 1.6;
+    color: #fff;
+    background: #111;
+    padding: 20px;
+}
+
+h1, h2, a {
+    color: #8a2be2;
+}

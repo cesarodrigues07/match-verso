@@ -47,7 +47,7 @@
 
 
   <div class="perfil-conteiner">
-    <h1>Sua Conta</h1>
+    <h1>SUA CONTA</h1>
     <div class="pfp-edit">
       <img src="../assets/img/pfp.jpg" alt="Foto de perfil" id="fotoPerfil" class="perfil-foto" />
       <label for="fotoInput" class="pfp-change"><i class='bx bx-edit'></i></label>
@@ -56,12 +56,17 @@
   
     <div class="perfil-edit">
       <div class="user-inf">
-        <div class="user-name">Nome: <span><h2 id="nomeUsuario">Usuário</h2></span></div>
+        <div class="user-name">Nome:<span><h2 id="nomeUsuario">Usuário</h2></span></div>
         <div class="user-email">Email:<span id="emailUsuario">email@exemplo.com</span></div>
         <div class="user-pass">Senha:<span id="senhaUsuario" class="senha-oculta">••••••••</span></div>
       </div>
-
-      <button id="editarPerfil" class="btn-perfil">Editar Perfil</button>
+      <div class="editar">
+        <h3>EDITAR PERFIL</h3>
+        <input type="text" id="inputNome" placeholder="Novo nome" class="edit-perfil-box">
+        <input type="email" id="inputEmail" placeholder="Novo email" class="edit-perfil-box">
+        <input type="password" id="inputSenha" placeholder="Nova senha" class="edit-perfil-box">
+        <button id="salvarPerfil" class="btn-perfil">Salvar Edição de Perfil</button>
+      </div>
       <button id="mostrarSenha" class="btn-perfil" style="background-color:#444;">Mostrar Senha</button>
       <button id="sair" class="btn-perfil" style="background-color:#d84b4b;">Sair</button>
     </div>

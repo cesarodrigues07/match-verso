@@ -99,7 +99,6 @@ input[type="file"] {
   border: 1px solid #202020;
   border-radius: 5px;
   padding: 3px;
-  
 }
 
 .user-name {
@@ -120,4 +119,39 @@ input[type="file"] {
 .user-pass {
   display: flex;
   justify-content: space-between;
+}
+
+.editar h3 {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.editar {
+  display: inline;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.editar input {
+    background-color: #303030;
+    min-width: 275px;
+    border: 1px solid #202020;
+    border-radius: 5px;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+
+.editar button {
+    display: block;
+    width: 100%;
+    background: #7a5cf5;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 7px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-size: 15px;
+    margin: 15px auto;
 }
