@@ -5,34 +5,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Partidas - Match Verso</title>
+
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/pages/partidas.css" />
   <link rel="shortcut icon" href="../assets/img/logo/logo-mv.png" type="image/x-icon" />
 </head>
 
 <body>
+
   <header>
     <nav class="nav-bar">
+
       <div class="logo">
         <a href="../index.html">
-          <img src="../assets/img/logo/logo-mv.png" alt="Logo Match Verso" class="logo-mv" />
+          <img src="../assets/img/logo/logo-mv.png" alt="Logo Match Verso" class="logo-mv">
         </a>
       </div>
 
       <div class="nav-list">
         <ul>
-          <li class="nav-item">
-            <a href="../index.html" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="partidas.html" class="nav-link">Partidas</a>
-          </li>
-          <li class="nav-item">
-            <a href="campeonatos.html" class="nav-link">Campeonatos</a>
-          </li>
-          <li class="nav-item">
-            <a href="sobre.html" class="nav-link">Sobre</a>
-          </li>
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="partidas.html" class="nav-link">Partidas</a></li>
+          <li><a href="campeonatos.html" class="nav-link">Campeonatos</a></li>
+          <li><a href="sobre.html" class="nav-link">Sobre</a></li>
         </ul>
       </div>
 
@@ -40,76 +35,87 @@
         <a href="login.html"><button class="login-button">Login</button></a>
         <a href="cadastro.html"><button class="cadastro-button">Cadastro</button></a>
       </div>
+
     </nav>
   </header>
 
   <main>
     <section class="content">
+
       <div class="fast-match-info">
         <h1>PARTIDA RÁPIDA</h1>
         <p>Entre no ritmo das partidas rápidas! Aqui você pode criar salas pra jogar com os amigos ou entrar em disputas
-          aleatórias. Ideal pra quem quer ação imediata e mostrar habilidade sem precisar de um torneio inteiro.</p>
+          aleatórias.</p>
       </div>
+
       <div class="fade-line"></div>
+
       <div class="fast-match-info">
-        <h2>SELECIONE O GAME</h1>
+        <h2>SELECIONE O GAME</h2>
       </div>
+
       <div class="cards-list">
-        <a href="#" data-jogo="cs2">
-          <img src="../assets/img/cards/card-cs2.jpg" class="cards-item" alt="CS2 Card" />
-        </a>
-        <a href="#" data-jogo="eafc">
-          <img src="../assets/img/cards/card-eafc26.jpg" class="cards-item" alt="EA FC Card" />
-        </a>
-        <a href="#" data-jogo="fort">
-          <img src="../assets/img/cards/card-fortnite.jpg" class="cards-item" alt="Fortnite Card" />
-        </a>
-        <a href="#" data-jogo="lol">
-          <img src="../assets/img/cards/card-lol.jpg" class="cards-item" alt="LoL Card" />
-        </a>
-        <a href="#" data-jogo="pubg">
-          <img src="../assets/img/cards/card-pubg.jpg" class="cards-item" alt="PUBG Card" />
-        </a>
-        <a href="#" data-jogo="rl">
-          <img src="../assets/img/cards/card-rl.jpg" class="cards-item" alt="Rocket League Card" />
-        </a>
-        <a href="#" data-jogo="vava">
-          <img src="../assets/img/cards/card-valorant.jpg" class="cards-item" alt="Valorant Card" />
-        </a>
+        <a href="#" data-jogo="cs2"><img src="../assets/img/cards/card-cs2.jpg" class="cards-item" alt="CS2"></a>
+        <a href="#" data-jogo="eafc"><img src="../assets/img/cards/card-eafc26.jpg" class="cards-item" alt="EA FC"></a>
+        <a href="#" data-jogo="fort"><img src="../assets/img/cards/card-fortnite.jpg" class="cards-item"
+            alt="Fortnite"></a>
+        <a href="#" data-jogo="lol"><img src="../assets/img/cards/card-lol.jpg" class="cards-item" alt="LoL"></a>
+        <a href="#" data-jogo="pubg"><img src="../assets/img/cards/card-pubg.jpg" class="cards-item" alt="PUBG"></a>
+        <a href="#" data-jogo="rl"><img src="../assets/img/cards/card-rl.jpg" class="cards-item"
+            alt="Rocket League"></a>
+        <a href="#" data-jogo="vava"><img src="../assets/img/cards/card-valorant.jpg" class="cards-item"
+            alt="Valorant"></a>
       </div>
+
       <div class="keys-conteiner">
+
+        <!-- MENU CS2 -->
         <div id="opcoes-cs2" class="keys keys-background">
+
           <div class="match-conteiner">
-            <h2>PARTIDA RÁPIDA</h2>
+            <h2>PARTIDA RÁPIDA - CS2</h2>
             <div class="tab-line"></div>
 
+            <div class="criar-sala-form">
+              <input type="text" id="nome-sala-cs2" placeholder="Nome da Sala">
+              <select id="modo-cs2">
+                <option value="1v1">1v1</option>
+                <option value="2v2">2v2</option>
+                <option value="5v5">5v5</option>
+              </select>
+            </div>
+
+            <button class="btn-criar-sala" data-jogo="cs2">Criar Sala</button>
+            <div class="tab-line"></div>
+
+            <div id="lista-salas-cs2" class="lista-salas"></div>
           </div>
+
+          <button class="fechar-menu">Fechar</button>
         </div>
 
+        <!-- OUTROS JOGOS (placeholder por enquanto) -->
         <div id="opcoes-eafc" class="keys keys-background">
-          <p>Modo: Ultimate Team, Carreira, Amistoso...</p>
+          <p>Modo: Ultimate Team, Carreira, Amistoso...</p><button class="fechar-menu">Fechar</button>
         </div>
-
         <div id="opcoes-fort" class="keys keys-background">
-          <p>Modo: Battle Royale, Criativo...</p>
+          <p>Modo: Battle Royale, Criativo...</p><button class="fechar-menu">Fechar</button>
         </div>
-
         <div id="opcoes-lol" class="keys keys-background">
-          <p>Mapa: Summoner's Rift, ARAM...</p>
+          <p>Mapa: Summoner's Rift, ARAM...</p><button class="fechar-menu">Fechar</button>
         </div>
-
         <div id="opcoes-pubg" class="keys keys-background">
-          <p>Modo: Solo, Duo, Squad...</p>
+          <p>Modo: Solo, Duo, Squad...</p><button class="fechar-menu">Fechar</button>
         </div>
-
         <div id="opcoes-rl" class="keys keys-background">
-          <p>Modo: 1v1, 2v2, 3v3...</p>
+          <p>Modo: 1v1, 2v2, 3v3...</p><button class="fechar-menu">Fechar</button>
+        </div>
+        <div id="opcoes-vava" class="keys keys-background">
+          <p>Mapa: Ascent, Bind, Haven...</p><button class="fechar-menu">Fechar</button>
         </div>
 
-        <div id="opcoes-vava" class="keys keys-background">
-          <p>Mapa: Ascent, Bind, Haven...</p>
-        </div>
       </div>
+
     </section>
   </main>
 
@@ -117,13 +123,15 @@
     <p class="copy">&copy; 2025 Match Verso. Todos os direitos reservados.</p>
     <p class="credits">
       Created by:
-      <a href="https://www.instagram.com/cesarodrigues_07/" target="_blank">César</a>,
-      <a href="https://www.instagram.com/eo_silas13/" target="_blank">Silas</a> e
-      <a href="https://www.instagram.com/yurii_xdkkj/" target="_blank">Yuri</a>.
+      <a href="https://www.instagram.com/cesarodrigues_07/">César</a>,
+      <a href="https://www.instagram.com/eo_silas13/">Silas</a> e
+      <a href="https://www.instagram.com/yurii_xdkkj/">Yuri</a>.
     </p>
   </footer>
+
   <script src="../js/main.js"></script>
   <script src="../js/pages/partidas.js"></script>
+
 </body>
 
 </html>

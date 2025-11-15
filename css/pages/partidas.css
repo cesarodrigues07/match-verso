@@ -1,7 +1,8 @@
+/* -------------------- TEXTOS E TÍTULOS -------------------- */
+
 .fast-match-info {
     margin: 40px auto;
     text-align: center;
-    padding: 30px auto 20px auto;
 }
 
 .fast-match-info h1 {
@@ -20,9 +21,11 @@
 .fade-line {
     height: 2px;
     width: 90%;
-    margin: 30px auto 30px auto;
+    margin: 30px auto;
     background: linear-gradient(to right, transparent, #ccc, transparent);
 }
+
+/* -------------------- CARDS -------------------- */
 
 .cards-list {
     width: 90%;
@@ -30,48 +33,147 @@
     margin: -10px auto 30px;
 }
 
-.keys-background {
-    display: none;
-    background-color: rgba(0, 0, 0, 0.275);
-    justify-content: space-between;
-    margin: 20px auto;  
-    width: 90%;
-    height: auto;
-    padding: 25px 40px;
-    border-radius: 12px;
+.cards-item {
+    cursor: pointer;
 }
+
+/* -------------------- MENU DOS JOGOS (ABAS) -------------------- */
 
 .keys {
     display: none;
 }
 
+.keys-background {
+    background-color: rgba(0, 0, 0, 0.275);
+    margin: 20px auto;
+    width: 90%;
+    padding: 25px 40px;
+    border-radius: 12px;
+    justify-content: space-between;
+}
+
+/* Título dentro do bloco do jogo */
 .match-conteiner {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0 20px;
-  position: relative;
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
 }
 
 .match-conteiner h2 {
-  font-size: 1.6rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: #fff;
-  
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
 }
 
 .tab-line {
-  position: absolute;
-  bottom: 0;
-  height: 2px;
-  width: 75%;
-  background: linear-gradient(to right, #6c63ff, transparent);
-  border-radius: 2px;
-  transition: 0.3s;
+    height: 2px;
+    width: 75%;
+    background: linear-gradient(to right, #6c63ff, transparent);
+    border-radius: 2px;
 }
 
+/* Botão fechar menu */
+.fechar-menu {
+    width: 100px;
+    height: 45px;
+    background: #6b4fff;
+    border-radius: 1000px;
+    border: none;
+    box-shadow: #6b4fff 0 10px 20px -10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* -------------------- FORMULÁRIO CRIAR SALA -------------------- */
+
+.criar-sala-form {
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.criar-sala-form input,
+.criar-sala-form select {
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.btn-criar-sala {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 10px;
+    background-color: #5842d8;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+/* -------------------- LISTA DE SALAS -------------------- */
+
+.lista-salas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 15px;
+    padding: 10px 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.sala-item {
+    background: #333;
+    width: 300px;
+    height: 75px;
+    padding: 8px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sala-item span {
+    color: #bdbdbd;
+    font-size: 13px;
+}
+
+/* Botões dentro da sala */
+.sala-actions {
+    display: flex;
+    gap: 6px;
+}
+
+.btn-entrar,
+.btn-excluir {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.btn-entrar {
+    background: #6b4fff;
+    color: white;
+}
+
+.btn-excluir {
+    background: #ff4d4d;
+    color: white;
+}
+
+.btn-excluir:hover {
+    background: #d93636;
+}
+
+/* -------------------- FOOTER -------------------- */
+
 footer {
-    top: 100vh;
+    margin-top: 60px;
 }
