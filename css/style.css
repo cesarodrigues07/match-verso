@@ -33,7 +33,6 @@ header {
 
 .nav-bar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   height: 80px;
   padding: 10px;
@@ -58,12 +57,12 @@ header {
 }
 
 .nav-list ul {
-  margin-left: 30px;
   display: flex;
   justify-content: space-between;
-  gap: 25px;
   align-items: center;
+  gap: 25px;
   list-style: none;
+  margin-left: 30px;
   transition: 0.3s;
 }
 
@@ -93,12 +92,11 @@ header {
 
 .login-button {
   border: none;
-  text-decoration: none;
   background-color: transparent;
   color: #eee;
-  margin-left: 1.15rem;
   font-weight: 500;
   font-size: 1.15rem;
+  margin-left: 1.15rem;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -109,14 +107,13 @@ header {
 }
 
 .cadastro-button {
-  text-decoration: none;
   background: #6c63ff;
-  color: white;
+  color: #fff;
   font-weight: 500;
   font-size: 1.15rem;
-  border: none;
   padding: 8px 15px;
   border-radius: 5px;
+  border: none;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -158,8 +155,8 @@ header {
   border-radius: 6px;
   cursor: pointer;
   font-size: 14px;
-  transition: 0.3s;
   margin-left: 8px;
+  transition: 0.3s;
 }
 
 .btn-conta:hover {
@@ -168,7 +165,6 @@ header {
 
 .btn-sair {
   background-color: #d84b4b;
-
 }
 
 .btn-sair:hover {
@@ -176,14 +172,12 @@ header {
 }
 
 .hero {
-  background-image: linear-gradient(#00000099, #00000099),
-    url("../assets/img/bg/gamer-bg.jpg");
+  background-image: linear-gradient(#00000099, #00000099), url("../assets/img/bg/gamer-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
   padding: 50px 20px;
-  height: 100%;
 }
 
 .name {
@@ -201,22 +195,22 @@ header {
 }
 
 .btn-start {
-  scale: 1.1;
   background: #6c63ff;
-  color: white;
-  border: none;
+  color: #fff;
   padding: 12px 25px;
   margin-top: 1rem;
   font-size: 1rem;
   font-weight: 700;
   border-radius: 5px;
+  border: none;
   cursor: pointer;
   transition: 0.3s;
+  scale: 1.1;
 }
 
 .btn-start:hover {
-  transform: scale(1.05);
   background: #574dcf;
+  transform: scale(1.05);
 }
 
 .cards-list {
@@ -229,7 +223,7 @@ header {
 .cards-list img {
   width: 180px;
   border-radius: 5px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: 0.3s;
 }
 
 .cards-item {
@@ -240,9 +234,7 @@ header {
 
 .cards-item:hover {
   border: 2px solid #6c63ff;
-  transition: 0.3s;
   transform: scale(1.05);
-
 }
 
 .choose-route {
@@ -278,21 +270,18 @@ header {
   height: 300px;
   object-fit: cover;
   border-radius: 5px;
-  margin-bottom: 10px;
   border: 2px solid #6c63ff;
   box-shadow: 0 0 10px 5px #6b63ff45;
+  margin-bottom: 10px;
   transition: 0.3s;
 }
 
 .route-img:hover {
+  border-color: #574dcf;
   transform: scale(1.03);
-  border: 2px solid #574dcf;
 }
 
-.match {
-  max-width: 500px;
-}
-
+.match,
 .camp {
   max-width: 500px;
 }
@@ -300,32 +289,28 @@ header {
 .create-bnt {
   background-color: #6c63ff;
   color: #fff;
-  border: none;
-  border-radius: 5px;
   padding: 10px 15px;
-  text-decoration: none;
-  margin: 15px 15px;
-  transition: 0.3s;
+  border-radius: 5px;
+  margin: 15px;
+  border: none;
   font-size: 15px;
-  font-weight: 400;
+  transition: 0.3s;
 }
 
 .create-bnt:hover {
   background-color: #574dcf;
-  cursor: pointer;
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 .find-bnt {
   background-color: transparent;
   color: #6c63ff;
   border: 2px solid #6c63ff;
-  border-radius: 5px;
   padding: 8px 13px;
-  text-decoration: none;
-  transition: 0.3s;
+  border-radius: 5px;
   font-size: 15px;
-  font-weight: 400;
+  transition: 0.3s;
 }
 
 .find-bnt:hover {
@@ -337,21 +322,20 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  color: #bbb;
   background: #24252a;
   border-top: 2px solid #6c63ff;
   box-shadow: 0 0 10px 5px #6b63ff45;
+  padding: 10px 20px;
+  color: #bbb;
   font-size: 0.9rem;
-  bottom: auto;
   position: sticky;
+  bottom: auto;
   z-index: 1000;
 }
 
 footer a {
   color: #6c63ff;
   text-decoration: none;
-  margin: 0 2px;
 }
 
 footer a:hover {
