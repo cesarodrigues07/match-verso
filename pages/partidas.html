@@ -55,66 +55,177 @@
       </div>
 
       <div class="cards-list">
-        <a href="#" data-jogo="cs2"><img src="../assets/img/cards/card-cs2.jpg" class="cards-item" alt="CS2"></a>
-        <a href="#" data-jogo="eafc"><img src="../assets/img/cards/card-eafc26.jpg" class="cards-item" alt="EA FC"></a>
-        <a href="#" data-jogo="fort"><img src="../assets/img/cards/card-fortnite.jpg" class="cards-item"
-            alt="Fortnite"></a>
-        <a href="#" data-jogo="lol"><img src="../assets/img/cards/card-lol.jpg" class="cards-item" alt="LoL"></a>
-        <a href="#" data-jogo="pubg"><img src="../assets/img/cards/card-pubg.jpg" class="cards-item" alt="PUBG"></a>
-        <a href="#" data-jogo="rl"><img src="../assets/img/cards/card-rl.jpg" class="cards-item"
-            alt="Rocket League"></a>
-        <a href="#" data-jogo="vava"><img src="../assets/img/cards/card-valorant.jpg" class="cards-item"
-            alt="Valorant"></a>
+        <a href="#" data-jogo="cs2" data-jogo-nome="CS2">
+          <img src="../assets/img/cards/card-cs2.jpg" class="cards-item" alt="CS2"></a>
+        <a href="#" data-jogo="eafc" data-jogo-nome="EA FC 26">
+          <img src="../assets/img/cards/card-eafc26.jpg" class="cards-item" alt="EA FC">
+        </a>
+        <a href="#" data-jogo="fort" data-jogo-nome="FORTNITE">
+          <img src="../assets/img/cards/card-fortnite.jpg" class="cards-item" alt="Fortnite">
+        </a>
+        <a href="#" data-jogo="lol" data-jogo-nome="LEAGUE OF LEGENDS">
+          <img src="../assets/img/cards/card-lol.jpg" class="cards-item" alt="LoL">
+        </a>
+        <a href="#" data-jogo="pubg" data-jogo-nome="PUBG">
+          <img src="../assets/img/cards/card-pubg.jpg" class="cards-item" alt="PUBG">
+        </a>
+        <a href="#" data-jogo="rl" data-jogo-nome="ROCKET LEAGUE">
+          <img src="../assets/img/cards/card-rl.jpg" class="cards-item" alt="Rocket League">
+          </a>
+        <a href="#" data-jogo="vava" data-jogo-nome="VALORANT">
+          <img src="../assets/img/cards/card-valorant.jpg" class="cards-item" alt="Valorant">
+        </a>
       </div>
 
       <div class="keys-conteiner">
 
         <!-- MENU CS2 -->
         <div id="opcoes-cs2" class="keys keys-background">
+          <h2 class="titulo-menu">CS2</h2>
+          <div class="tab-line"></div>
+          <p>Em breve</p><button class="fechar-menu">Fechar</button>
+        </div>
 
+        <div id="opcoes-eafc" class="keys keys-background">
           <div class="match-conteiner">
-            <h2>PARTIDA RÁPIDA - CS2</h2>
+            <h2 class="titulo-menu">EA FC 26 - Partida Rápida</h2>
             <div class="tab-line"></div>
 
-            <div class="criar-sala-form">
-              <input type="text" id="nome-sala-cs2" placeholder="Nome da Sala">
-              <select id="modo-cs2">
-                <option value="1v1">1v1</option>
-                <option value="2v2">2v2</option>
-                <option value="5v5">5v5</option>
+            <div class="times-section">
+
+              <div class="time-card">
+                <h3>Time da Casa</h3>
+                <select id="casaSelect"></select>
+              </div>
+
+              <div class="time-card">
+                <h3>Visitante</h3>
+                <select id="foraSelect"></select>
+              </div>
+            </div>
+
+            <div class="config-item">
+              <label>Duração</label>
+              <select id="tempo">
+                <option>4 minutos</option>
+                <option>5 minutos</option>
+                <option>6 minutos</option>
+                <option>7 minutos</option>
+                <option>8 minutos</option>
+                <option>9 minutos</option>
+                <option>10 minutos</option>
               </select>
             </div>
 
-            <button class="btn-criar-sala" data-jogo="cs2">Criar Sala</button>
-            <div class="tab-line"></div>
+            <div class="config-item">
+              <label>Estádio</label>
+              <select id="estadio">
+                <option>Random</option>
+                <option>Wembley</option>
+                <option>Camp Nou</option>
+                <option>Santiago Bernabéu</option>
+              </select>
+            </div>
 
-            <div id="lista-salas-cs2" class="lista-salas"></div>
+
+            <div class="config-item">
+              <label>Clima</label>
+              <select id="clima">
+                <option>Limpo</option>
+                <option>Nublado</option>
+                <option>Chuva</option>
+                <option>Neve</option>
+              </select>
+            </div>
+            <button class="btn-start" id="startMatch">Jogar</button>
+
+
+            <!-- POPUP CONFIRMAR PARTIDA -->
+            <div id="popup-config" class="popup hidden">
+              <div class="popup-content">
+                <h2>Confirmar Partida</h2>
+
+                <p><strong>Casa:</strong> <span id="confCasa"></span></p>
+                <p><strong>Visitante:</strong> <span id="confFora"></span></p>
+                <p><strong>Duração:</strong> <span id="confTempo"></span></p>
+                <p><strong>Estádio:</strong> <span id="confEstadio"></span></p>
+                <p><strong>Clima:</strong> <span id="confClima"></span></p>
+
+                <div class="codigo-box">
+                  <p><strong>Código da partida:</strong></p>
+                  <span id="codigoPartida"></span>
+                </div>
+
+                <button id="confirmarPartida" class="btn">Iniciar Partida</button>
+                <button id="fecharPopup1" class="btn cancelar">Cancelar</button>
+              </div>
+            </div>
+
+            <!-- POPUP FINALIZAR PARTIDA -->
+            <div id="popup-final" class="popup hidden">
+              <div class="popup-content">
+                <h2>Finalizar Partida</h2>
+
+                <label>Quem venceu?</label>
+                <select id="vencedor">
+                  <option value="casa">Time da Casa</option>
+                  <option value="fora">Time Visitante</option>
+                  <option value="empate">Empate</option>
+                </select>
+
+                <label>Placar (ex: 3-2)</label>
+                <input type="text" id="placar" placeholder="Digite o placar">
+
+                <button id="concluirPartida" class="btn">Concluir</button>
+                <button id="fecharPopup2" class="btn cancelar">Cancelar</button>
+              </div>
+            </div>
+
+
+
+
           </div>
 
           <button class="fechar-menu">Fechar</button>
-        </div>
 
-        <!-- OUTROS JOGOS (placeholder por enquanto) -->
-        <div id="opcoes-eafc" class="keys keys-background">
-          <p>Modo: Ultimate Team, Carreira, Amistoso...</p><button class="fechar-menu">Fechar</button>
-        </div>
-        <div id="opcoes-fort" class="keys keys-background">
-          <p>Modo: Battle Royale, Criativo...</p><button class="fechar-menu">Fechar</button>
-        </div>
-        <div id="opcoes-lol" class="keys keys-background">
-          <p>Mapa: Summoner's Rift, ARAM...</p><button class="fechar-menu">Fechar</button>
-        </div>
-        <div id="opcoes-pubg" class="keys keys-background">
-          <p>Modo: Solo, Duo, Squad...</p><button class="fechar-menu">Fechar</button>
-        </div>
-        <div id="opcoes-rl" class="keys keys-background">
-          <p>Modo: 1v1, 2v2, 3v3...</p><button class="fechar-menu">Fechar</button>
-        </div>
-        <div id="opcoes-vava" class="keys keys-background">
-          <p>Mapa: Ascent, Bind, Haven...</p><button class="fechar-menu">Fechar</button>
         </div>
 
       </div>
+      <div id="opcoes-fort" class="keys keys-background">
+        <h2 class="titulo-menu">FORTNITE</h2>
+        <div class="tab-line"></div>
+        <p>Em breve</p><button class="fechar-menu">Fechar</button>
+      </div>
+      <div id="opcoes-lol" class="keys keys-background">
+        <h2 class="titulo-menu">LEAGUE OF LEGENDS</h2>
+        <div class="tab-line"></div>
+        <p>Em breve</p><button class="fechar-menu">Fechar</button>
+      </div>
+      <div id="opcoes-pubg" class="keys keys-background">
+        <h2 class="titulo-menu">PUBG</h2>
+        <div class="tab-line"></div>
+        <p>Em breve</p><button class="fechar-menu">Fechar</button>
+      </div>
+      <div id="opcoes-rl" class="keys keys-background">
+        <h2 class="titulo-menu">ROCKET LEAGUE</h2>
+        <div class="tab-line"></div>
+        <p>Em breve</p><button class="fechar-menu">Fechar</button>
+      </div>
+      <div id="opcoes-vava" class="keys keys-background">
+        <h2 class="titulo-menu">VALORANT</h2>
+        <div class="tab-line"></div>
+        <p>Em breve</p><button class="fechar-menu">Fechar</button>
+      </div>
+
+      </div>
+
+      <div class="historico keys-background">
+        <h2 class="titulo-menu">HISTORICO DE PARTIDAS</h2>
+        <div class="tab-line"></div>
+
+        <div id="historicoList" class="historico-list"></div>
+      </div>
+
 
     </section>
   </main>

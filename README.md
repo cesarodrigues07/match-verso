@@ -1,17 +1,16 @@
 # 🏆 Match Verso
 
-> **Match Verso** é uma plataforma web para **organização de torneios de e-sports**.  
-Nosso objetivo é facilitar a criação, gerenciamento e participação em campeonatos online, oferecendo **uma experiência rápida, competitiva e acessível para todos os jogadores**.
+> **Match Verso** é uma plataforma web para **organização de torneios e partidas de e-sports**.  
+Nosso objetivo é facilitar a criação, gerenciamento e participação em campeonatos e partidas online, oferecendo **uma experiência rápida, competitiva e prática para todos os jogadores**.
 
 ---
 
 ## 🚀 Sobre o Projeto
 
 O Match Verso nasceu como um projeto de **TCC do curso Técnico em Informática**.  
-Inspirado em plataformas como **Battlefy**, **Toornament** e **Challonge**, o sistema busca oferecer:
+Inspirado em plataformas como **Battlefy** e **Toornament**, o sistema busca oferecer:
 
-- 🏅 **Criação de torneios personalizados** 
-- 📅 **Organização de chaves e partidas**  
+- 🏅 **Criação de partidas amistosas**
 - 🎮 **Suporte para diversos jogos de e-sports**  
 
 Nosso foco é entregar uma **plataforma simples, intuitiva e moderna** para a comunidade gamer.
@@ -20,24 +19,33 @@ Nosso foco é entregar uma **plataforma simples, intuitiva e moderna** para a co
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Frontend:** HTML5, CSS3, JavaScript  
-- **Backend:** (a definir) – Possivelmente React  
-- **Banco de Dados:** (a definir) – Provavelmente MySQL  
-- **Outros:** Git e Obsidian (organização)
+- **Frontend:** HTML5, CSS3 e JavaScript
+- **Outros:** Git, Github e Obsidian
 
 > ⚠️ *O projeto ainda está em fase de desenvolvimento e as tecnologias podem mudar conforme o progresso.*
 
 ---
 
-## 📂 Estrutura do Projeto (em andamento)
+## 📂 Estrutura do Projeto
 
 ```
 match-verso/
 │
-├── index.html           # Página inicial
-├── /assets              # Imagens, ícones e logos
-├── /css                 # Arquivos de estilo
-├── /js                  # Scripts do projeto
+├── assets/
+│   └── img/
+│
+├── css/
+│   ├── style.css            
+│   └── pages/
+│
+├── js/
+│   ├── main.js              
+│   └── pages/
+│
+├── pages/
+│
+├── index.html
+│
 └── README.md
 ```
 
