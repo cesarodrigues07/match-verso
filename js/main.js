@@ -10,6 +10,10 @@ if (logado === "true" && user) {
   const navLogin = document.querySelector(".nav-login");
 
   let foto = "../assets/img/pfp.jpg";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
   if (user.foto && user.foto.startsWith("data:image")) {
     foto = user.foto;
   }
@@ -24,6 +28,13 @@ if (logado === "true" && user) {
     </div>
   `;
 
+<<<<<<< HEAD
+=======
+  document.getElementById("btn-account").addEventListener("click", () => {
+    window.location.href = "pages/perfil.html";
+  });
+
+>>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
   document.getElementById("btn-logout").addEventListener("click", () => {
     localStorage.removeItem("logado");
     localStorage.removeItem("current_user");
