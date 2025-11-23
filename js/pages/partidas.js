@@ -1,14 +1,8 @@
 const cards = document.querySelectorAll(".cards-list a");
 const keys = document.querySelectorAll(".keys");
 
-<<<<<<< HEAD
 cards.forEach(card => {
   card.addEventListener("click", e => {
-=======
-// Abrir menu correspondente ao jogo clicado
-cards.forEach((card) => {
-  card.addEventListener("click", (e) => {
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
     e.preventDefault();
     const jogo = card.getAttribute("data-jogo");
     const nome = card.getAttribute("data-jogo-nome");
@@ -16,44 +10,16 @@ cards.forEach((card) => {
     jogoAtual = jogo;
     nomeJogoAtual = nome;
 
-<<<<<<< HEAD
     keys.forEach(menu => (menu.style.display = "none"));
-=======
-    // Fecha todos
-    keys.forEach((menu) => (menu.style.display = "none"));
-
-    // Abre só o certo
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
     const menuSelecionado = document.getElementById(`opcoes-${jogo}`);
     if (menuSelecionado) menuSelecionado.style.display = "flex";
   });
 });
 
-<<<<<<< HEAD
 let jogoAtual = null;
 let nomeJogoAtual = null;
-=======
-let jogoAtual = null;       // qual jogo está aberto?
-let nomeJogoAtual = null;   // nome bonito do jogo
-
-cards.forEach(card => {
-  card.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    jogoAtual = card.getAttribute("data-jogo");
-    nomeJogoAtual = card.getAttribute("data-jogo-nome");
-    
-    keys.forEach(menu => menu.style.display = "none");
-
-    const menuSelecionado = document.getElementById(`opcoes-${jogoAtual}`);
-    if (menuSelecionado) menuSelecionado.style.display = "flex";
-  });
-});
-
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
 
 const btnFecharMenus = document.querySelectorAll(".fechar-menu");
-<<<<<<< HEAD
 btnFecharMenus.forEach(botao => {
   botao.addEventListener("click", () => {
     keys.forEach(menu => (menu.style.display = "none"));
@@ -62,19 +28,6 @@ btnFecharMenus.forEach(botao => {
 
 const botoesCriar = document.querySelectorAll(".btn-criar-sala");
 botoesCriar.forEach(botao => {
-=======
-
-btnFecharMenus.forEach((botao) => {
-  botao.addEventListener("click", () => {
-    keys.forEach((menu) => (menu.style.display = "none"));
-  });
-});
-
-// Criar sala
-const botoesCriar = document.querySelectorAll(".btn-criar-sala");
-
-botoesCriar.forEach((botao) => {
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
   botao.addEventListener("click", () => {
     const jogo = botao.getAttribute("data-jogo");
     const inputNome = document.getElementById(`nome-sala-${jogo}`);
@@ -106,27 +59,13 @@ botoesCriar.forEach((botao) => {
   });
 });
 
-<<<<<<< HEAD
 const times = ["Barcelona", "Real Madrid", "PSG", "Manchester City", "Liverpool"];
-=======
-const times = [
-  "Barcelona",
-  "Real Madrid",
-  "PSG",
-  "Manchester City",
-  "Liverpool",
-];
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
 
 const casa = document.getElementById("casaSelect");
 const fora = document.getElementById("foraSelect");
 const start = document.getElementById("startMatch");
 
-<<<<<<< HEAD
 times.forEach(t => {
-=======
-times.forEach((t) => {
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
   casa.innerHTML += `<option>${t}</option>`;
   fora.innerHTML += `<option>${t}</option>`;
 });
@@ -148,7 +87,6 @@ start.addEventListener("click", () => {
 function gerarCodigo() {
   const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
   let codigo = "MV-";
-<<<<<<< HEAD
   for (let i = 0; i < 6; i++) codigo += chars[Math.floor(Math.random() * chars.length)];
   return codigo;
 }
@@ -159,23 +97,6 @@ const popup2 = document.getElementById("popup-final");
 const fechar1 = document.getElementById("fecharPopup1");
 const fechar2 = document.getElementById("fecharPopup2");
 
-=======
-  for (let i = 0; i < 6; i++) {
-    codigo += chars[Math.floor(Math.random() * chars.length)];
-  }
-  return codigo;
-}
-
-// ELEMENTOS
-const startMatch = document.getElementById("startMatch");
-const popup1 = document.getElementById("popup-config");
-const popup2 = document.getElementById("popup-final");
-
-const fechar1 = document.getElementById("fecharPopup1");
-const fechar2 = document.getElementById("fecharPopup2");
-
-// ABRIR POPUP 1
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
 startMatch.addEventListener("click", () => {
   document.getElementById("confCasa").innerText = casaSelect.value;
   document.getElementById("confFora").innerText = foraSelect.value;
@@ -189,27 +110,15 @@ startMatch.addEventListener("click", () => {
   popup1.classList.remove("hidden");
 });
 
-<<<<<<< HEAD
-=======
-// CANCELAR POPUP 1
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
 fechar1.addEventListener("click", () => {
   popup1.classList.add("hidden");
 });
 
-<<<<<<< HEAD
-=======
-// IR PARA POPUP 2
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
 document.getElementById("confirmarPartida").addEventListener("click", () => {
   popup1.classList.add("hidden");
   popup2.classList.remove("hidden");
 });
 
-<<<<<<< HEAD
-=======
-// CANCELAR POPUP 2
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
 fechar2.addEventListener("click", () => {
   popup2.classList.add("hidden");
 });
@@ -222,11 +131,6 @@ document.getElementById("concluirPartida").addEventListener("click", () => {
   const timeFora = foraSelect.value;
 
   const horario = getHorarioPartida();
-<<<<<<< HEAD
-=======
-
-  // agora usa o nome do jogo automaticamente
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
   const nomeDoJogo = nomeJogoAtual || "Jogo Desconhecido";
 
   const card = document.createElement("div");
@@ -240,10 +144,6 @@ document.getElementById("concluirPartida").addEventListener("click", () => {
       Resultado: ${placar}<br>
       <span class="horario">${horario}</span>
     </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
     <button class="btn-excluir">Excluir</button>
   `;
 
@@ -257,10 +157,6 @@ document.getElementById("concluirPartida").addEventListener("click", () => {
   document.getElementById("placar").value = "";
 });
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
 function getHorarioPartida() {
   const agora = new Date();
   const horas = agora.getHours().toString().padStart(2, "0");
@@ -268,9 +164,5 @@ function getHorarioPartida() {
   const dia = agora.getDate().toString().padStart(2, "0");
   const mes = (agora.getMonth() + 1).toString().padStart(2, "0");
   const ano = agora.getFullYear();
-<<<<<<< HEAD
-=======
-
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
   return `${dia}/${mes}/${ano} às ${horas}:${minutos}`;
 }

@@ -61,10 +61,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-<<<<<<< HEAD
-=======
-  align-items: center;
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
   gap: 25px;
   list-style: none;
   margin-left: 30px;
@@ -98,17 +94,9 @@ header {
 .login-button {
   background: transparent;
   border: none;
-<<<<<<< HEAD
   color: #eee;
   font-size: 1.15rem;
   font-weight: 500;
-=======
-  background-color: transparent;
-  color: #eee;
-  font-weight: 500;
-  font-size: 1.15rem;
-  margin-left: 1.15rem;
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
   cursor: pointer;
   transition: 0.3s;
 }
@@ -126,11 +114,8 @@ header {
   padding: 8px 15px;
   border-radius: 5px;
   border: none;
-<<<<<<< HEAD
   font-size: 1.15rem;
   font-weight: 500;
-=======
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
   cursor: pointer;
   transition: 0.3s;
 }
@@ -174,17 +159,6 @@ header {
   font-size: 14px;
   margin-left: 8px;
   transition: 0.3s;
-<<<<<<< HEAD
-=======
-}
-
-.btn-conta:hover {
-  background-color: #9a82ff;
-}
-
-.btn-sair {
-  background-color: #d84b4b;
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
 }
 
 .btn-sair:hover {
@@ -222,11 +196,6 @@ header {
   margin-top: 1rem;
   font-size: 1rem;
   font-weight: 700;
-<<<<<<< HEAD
-=======
-  border-radius: 5px;
-  border: none;
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
   cursor: pointer;
   transition: 0.3s;
   scale: 1.1;
@@ -247,13 +216,6 @@ header {
 .cards-item {
   width: 180px;
   border-radius: 5px;
-<<<<<<< HEAD
-=======
-  transition: 0.3s;
-}
-
-.cards-item {
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
   margin-top: 1.1rem;
   border: 2px solid transparent;
   cursor: default;
@@ -286,13 +248,8 @@ header {
   width: 450px;
   height: 300px;
   border-radius: 5px;
-<<<<<<< HEAD
   object-fit: cover;
   border: 2px solid #6c63ff;
-=======
-  border: 2px solid #6c63ff;
-  box-shadow: 0 0 10px 5px #6b63ff45;
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
   margin-bottom: 10px;
   transition: 0.3s;
   box-shadow: 0 0 10px 5px #6b63ff45;
@@ -313,13 +270,8 @@ header {
   color: #fff;
   padding: 10px 15px;
   border-radius: 5px;
-<<<<<<< HEAD
   border: none;
   margin: 15px;
-=======
-  margin: 15px;
-  border: none;
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
   font-size: 15px;
   transition: 0.3s;
 }
@@ -354,12 +306,6 @@ footer {
   padding: 10px 20px;
   color: #bbb;
   font-size: 0.9rem;
-<<<<<<< HEAD
-=======
-  position: sticky;
-  bottom: auto;
-  z-index: 1000;
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
 }
 
 footer a {

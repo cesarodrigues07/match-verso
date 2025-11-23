@@ -173,14 +173,6 @@ footer {
     margin-top: 60px;
 }
 
-<<<<<<< HEAD
-=======
-.match-conteiner {
-    display: flex;
-    width: 80%;
-}
-
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
 .titulo-menu {
     font-size: 24px;
     margin-bottom: 15px;
@@ -274,18 +266,7 @@ footer {
     margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
 .popup-content input,
-=======
-.popup-content input {
-    width: 100%;
-    padding: 8px;
-    border-radius: 6px;
-    border: none;
-    outline: none;
-}
-
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
 .popup-content select {
     width: 100%;
     padding: 8px;
@@ -324,17 +305,6 @@ footer {
 }
 
 .historico-card {
-<<<<<<< HEAD
-=======
-    background: #6b63ff21;
-    border-radius: 10px;
-    padding: 12px;
-    color: #fff;
-    border-left: 4px solid #6c63ff;
-}
-
-.historico-card {
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
     background: #6c63ff21;
     border-radius: 10px;
     padding: 12px;
@@ -348,17 +318,4 @@ footer {
 .horario {
     font-size: 0.85em;
     opacity: 0.75;
-<<<<<<< HEAD
-=======
-}
-
-.btn-excluir {
-    background: #972828;
-    border: none;
-    padding: 6px 10px;
-    border-radius: 6px;
-    cursor: pointer;
-    color: #fff;
-    font-size: 0.8em;
->>>>>>> 22c2d6182c8fa57eeef36d39ecc0c96a53685fc8
 }
