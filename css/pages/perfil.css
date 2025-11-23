@@ -75,10 +75,6 @@ input[type="file"] {
   background: #9a82ff;
 }
 
-input[type="file"] {
-  display: none;
-}
-
 .senha-oculta {
   font-size: 1rem;
   color: #fff;
@@ -101,7 +97,9 @@ input[type="file"] {
   padding: 3px;
 }
 
-.user-name {
+.user-name,
+.user-email,
+.user-pass {
   display: flex;
   justify-content: space-between;
 }
@@ -111,21 +109,6 @@ input[type="file"] {
   font-weight: normal;
 }
 
-.user-email {
-  display: flex;
-  justify-content: space-between;
-}
-
-.user-pass {
-  display: flex;
-  justify-content: space-between;
-}
-
-.editar h3 {
-  margin: 20px auto;
-  text-align: center;
-}
-
 .editar {
   display: inline;
   justify-content: space-around;
@@ -133,25 +116,30 @@ input[type="file"] {
   margin: 0 auto;
 }
 
+.editar h3 {
+  margin: 20px auto;
+  text-align: center;
+}
+
 .editar input {
-    background-color: #303030;
-    min-width: 275px;
-    border: 1px solid #202020;
-    border-radius: 5px;
-    padding: 7px;
-    margin-bottom: 10px;
+  background-color: #303030;
+  min-width: 275px;
+  border: 1px solid #202020;
+  border-radius: 5px;
+  padding: 7px;
+  margin-bottom: 10px;
 }
 
 .editar button {
-    display: block;
-    width: 100%;
-    background: #7a5cf5;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    padding: 7px;
-    cursor: pointer;
-    transition: 0.2s;
-    font-size: 15px;
-    margin: 15px auto;
+  display: block;
+  width: 100%;
+  background: #7a5cf5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 7px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 15px;
+  margin: 15px auto;
 }

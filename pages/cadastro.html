@@ -2,13 +2,12 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadastro - Match Verso</title>
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/pages/login.css" />
-    <link rel="shortcut icon" href="../assets/img/logo/logo-mv.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campeonatos - Match Verso</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages/campeonatos.css">
+    <link rel="shortcut icon" href="../assets/img/logo/logo-mv.png" type="image/x-icon">
 </head>
 
 <body>
@@ -16,24 +15,16 @@
         <nav class="nav-bar">
             <div class="logo">
                 <a href="../index.html">
-                    <img src="../assets/img/logo/logo-mv.png" alt="Logo Match Verso" class="logo-mv" />
+                    <img src="../assets/img/logo/logo-mv.png" alt="Logo Match Verso" class="logo-mv">
                 </a>
             </div>
 
             <div class="nav-list">
                 <ul>
-                    <li class="nav-item">
-                        <a href="../index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="partidas.html" class="nav-link">Partidas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="campeonatos.html" class="nav-link">Campeonatos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="sobre.html" class="nav-link">Sobre</a>
-                    </li>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="partidas.html" class="nav-link">Partidas</a></li>
+                    <li class="nav-item"><a href="campeonatos.html" class="nav-link">Campeonatos</a></li>
+                    <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
                 </ul>
             </div>
 
@@ -44,54 +35,99 @@
         </nav>
     </header>
 
-    <main class="register-page">
-        <div class="register-content">
-            <form>
-                <h1>CADASTRO</h1>
-                <div class="input-box">
-                    <input placeholder="Email" type="email" required />
-                    <i class="bx bxs-envelope"></i>
-                </div>
-                <div class="input-box">
-                    <input placeholder="Usuário" type="text" required />
-                    <i class="bx bxs-user"></i>
-                </div>
-                <div class="input-box">
-                    <input placeholder="Senha" type="password" required />
-                    <i class="bx bxs-lock-alt"></i>
+    <main>
+        <section class="content">
+            <div class="fast-match-info">
+                <h1>CAMPEONATOS</h1>
+                <p>Mostre quem é o verdadeiro campeão! No modo campeonato, você organiza ou participa de torneios
+                    completos, com fases eliminatórias, rankings e premiações. Perfeito pra quem curte competição e quer
+                    subir de nível no Match Verso.</p>
+            </div>
+
+            <div class="fade-line"></div>
+
+            <div class="fast-match-info">
+                <h2>SELECIONE O GAME</h2>
+            </div>
+
+            <div class="cards-list">
+                <a href="#" data-jogo="cs2"><img src="../assets/img/cards/card-cs2.jpg" class="cards-item"
+                        alt="CS2 Card"></a>
+                <a href="#" data-jogo="eafc"><img src="../assets/img/cards/card-eafc26.jpg" class="cards-item"
+                        alt="EA FC Card"></a>
+                <a href="#" data-jogo="fort"><img src="../assets/img/cards/card-fortnite.jpg" class="cards-item"
+                        alt="Fortnite Card"></a>
+                <a href="#" data-jogo="lol"><img src="../assets/img/cards/card-lol.jpg" class="cards-item"
+                        alt="LoL Card"></a>
+                <a href="#" data-jogo="pubg"><img src="../assets/img/cards/card-pubg.jpg" class="cards-item"
+                        alt="PUBG Card"></a>
+                <a href="#" data-jogo="rl"><img src="../assets/img/cards/card-rl.jpg" class="cards-item"
+                        alt="Rocket League Card"></a>
+                <a href="#" data-jogo="vava"><img src="../assets/img/cards/card-valorant.jpg" class="cards-item"
+                        alt="Valorant Card"></a>
+            </div>
+
+            <div class="keys-conteiner">
+
+                <div id="opcoes-cs2" class="keys keys-background">
+                    <h2>Chaveamento — CS2</h2>
+                    <form id="form-cs2">
+                        <input type="text" placeholder="Nome do time 1">
+                        <input type="text" placeholder="Nome do time 2">
+                        <button type="button" onclick="gerarChaveamento('cs2')">Gerar Chaveamento</button>
+                    </form>
+                    <div id="chaveamento-cs2"></div>
                 </div>
 
-                <div class="terms-conditions">
-                    <label>
-                        <input type="checkbox" class="terms-checkbox" required />
-                        Aceito os&nbsp;<a href="terms.html" target="_blank"> termos e condições</a>
-                    </label>
+                <div id="opcoes-eafc" class="keys keys-background">
+                    <p>Modo: Ultimate Team, Carreira, Amistoso...</p>
                 </div>
 
-                <div class="input-box">
-                    <button type="submit">Entrar</button>
+                <div id="opcoes-fort" class="keys keys-background">
+                    <p>Modo: Battle Royale, Criativo...</p>
                 </div>
 
-                <div class="login-link">
-                    <p>
-                        Já tem uma conta?
-                        <a href="login.html">Faça login</a>
-                    </p>
-            </form>
-        </div>
+                <div id="opcoes-lol" class="keys keys-background">
+                    <p>Mapa: Summoner's Rift, ARAM...</p>
+                </div>
+
+                <div id="opcoes-pubg" class="keys keys-background">
+                    <p>Modo: Solo, Duo, Squad...</p>
+                </div>
+
+                <div id="opcoes-rl" class="keys keys-background">
+                    <p>Modo: 1v1, 2v2, 3v3...</p>
+                </div>
+
+                <div id="opcoes-vava" class="keys keys-background">
+                    <p>Mapa: Ascent, Bind, Haven...</p>
+                </div>
+
+            </div>
+        </section>
     </main>
 
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Janela Descontinuada</h2>
+            <p>Essa parte do Match Verso não tá mais em uso.</p>
+            <a href="../index.html"><button id="fechar">Ok, entendi</button></a>
+        </div>
+    </div>
+
     <footer>
-        <p class="copy">&copy; 2025 Match Verso. Todos os direitos reservados.</p>
+        <p class="copy">© 2025 Match Verso. Todos os direitos reservados.</p>
         <p class="credits">
             Created by:
             <a href="https://www.instagram.com/cesarodrigues_07/" target="_blank">César</a>,
-            <a href="https://www.instagram.com/eo_silas13/" target="_blank">Silas</a> e
+            <a href="https://www.instagram.com/eo_silas13/" target="_blank">Silas</a>
+            e
             <a href="https://www.instagram.com/yurii_xdkkj/" target="_blank">Yuri</a>.
         </p>
     </footer>
+
     <script src="../js/main.js"></script>
-    <script src="../js/pages/cadastro.js"></script>
+    <script src="../js/campeonatos.js"></script>
 </body>
 
 </html>

@@ -20,7 +20,7 @@
 .fade-line {
     height: 2px;
     width: 90%;
-    margin: 30px auto 30px auto;
+    margin: 30px auto;
     background: linear-gradient(to right, transparent, #ccc, transparent);
 }
 
@@ -34,7 +34,7 @@
     display: none;
     background-color: rgba(0, 0, 0, 0.275);
     justify-content: space-between;
-    margin: 20px auto;  
+    margin: 20px auto;
     width: 90%;
     height: auto;
     padding: 30px 50px;

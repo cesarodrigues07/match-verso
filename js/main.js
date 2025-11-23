@@ -10,7 +10,6 @@ if (logado === "true" && user) {
   const navLogin = document.querySelector(".nav-login");
 
   let foto = "../assets/img/pfp.jpg";
-
   if (user.foto && user.foto.startsWith("data:image")) {
     foto = user.foto;
   }
@@ -18,17 +17,12 @@ if (logado === "true" && user) {
   navLogin.innerHTML = `
     <div class="login-perfil">
       <span class="user-nome">Olá, ${user.usuario}</span>
-      <img src="${foto}" alt="Foto do perfil" class="user-pfp">
-      <div class="perfil-opcoes">    
-        <button id="btn-account" class="btn-conta">Conta</button>
-        <button id="btn-logout" class="btn-conta btn-sair">Sair</button>
+      <a href="pages/perfil.html"><img src="${foto}" class="user-pfp"></a>
+      <div class="perfil-opcoes">
+        <button id="btn-logout" class="btn-sair">Sair</button>
       </div>
     </div>
   `;
-
-  document.getElementById("btn-account").addEventListener("click", () => {
-    window.location.href = "pages/perfil.html";
-  });
 
   document.getElementById("btn-logout").addEventListener("click", () => {
     localStorage.removeItem("logado");

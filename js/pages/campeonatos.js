@@ -1,3 +1,3 @@
-  document.getElementById("fechar").addEventListener("click", () => {
-    document.getElementById("popup").style.display = "none";
-  });
+document.getElementById("fechar").addEventListener("click", () => {
+  document.getElementById("popup").style.display = "none";
+});

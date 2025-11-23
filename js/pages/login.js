@@ -6,7 +6,10 @@ formLogin.addEventListener("submit", (e) => {
   const usuario = formLogin
     .querySelector('input[placeholder="Usuário"]')
     .value.trim();
-  const senha = formLogin.querySelector('input[placeholder="Senha"]').value;
+
+  const senha = formLogin
+    .querySelector('input[placeholder="Senha"]')
+    .value;
 
   const saved = JSON.parse(localStorage.getItem("mv_user_global"));
 

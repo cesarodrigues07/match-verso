@@ -8,6 +8,8 @@ body {
     padding: 20px;
 }
 
-h1, h2, a {
+h1,
+h2,
+a {
     color: #8a2be2;
 }
