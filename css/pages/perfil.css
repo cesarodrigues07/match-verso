@@ -128,6 +128,7 @@ input[type="file"] {
   border-radius: 5px;
   padding: 7px;
   margin-bottom: 10px;
+  color: white;
 }
 
 .editar button {
