@@ -48,34 +48,35 @@
       <input type="file" id="fotoInput" accept="image/*" />
     </div>
 
-    <div class="perfil-edit">
-      <div class="user-inf">
-        <div class="user-name">
-          Nome:
-          <span>
-            <h2 id="nomeUsuario">Usuário</h2>
-          </span>
+    <div class="separate">
+      <div class="perfil-edit">
+        <div class="user-inf">
+          <div class="user-name">
+            Nome:
+            <span>
+              <h2 id="nomeUsuario">Usuário</h2>
+            </span>
+          </div>
+
+          <div class="user-email">
+            Email:
+            <span id="emailUsuario">email@exemplo.com</span>
+          </div>
+
+          <div class="user-pass">
+            Senha:
+            <span id="senhaUsuario" class="senha-oculta">••••••••</span>
+          </div>
         </div>
 
-        <div class="user-email">
-          Email:
-          <span id="emailUsuario">email@exemplo.com</span>
-        </div>
-
-        <div class="user-pass">
-          Senha:
-          <span id="senhaUsuario" class="senha-oculta">••••••••</span>
+        <div class="editar">
+          <h3>EDITAR PERFIL</h3>
+          <input type="text" id="inputNome" placeholder="Novo nome" class="edit-perfil-box" />
+          <input type="email" id="inputEmail" placeholder="Novo email" class="edit-perfil-box" />
+          <input type="password" id="inputSenha" placeholder="Nova senha" class="edit-perfil-box" />
+          <button id="salvarPerfil" class="btn-perfil">Salvar Edição de Perfil</button>
         </div>
       </div>
-
-      <div class="editar">
-        <h3>EDITAR PERFIL</h3>
-        <input type="text" id="inputNome" placeholder="Novo nome" class="edit-perfil-box" />
-        <input type="email" id="inputEmail" placeholder="Novo email" class="edit-perfil-box" />
-        <input type="password" id="inputSenha" placeholder="Nova senha" class="edit-perfil-box" />
-        <button id="salvarPerfil" class="btn-perfil">Salvar Edição de Perfil</button>
-      </div>
-
       <button id="mostrarSenha" class="btn-perfil" style="background-color:#444;">Mostrar Senha</button>
       <button id="sair" class="btn-perfil" style="background-color:#d84b4b;">Sair</button>
     </div>

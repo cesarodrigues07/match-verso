@@ -35,7 +35,6 @@
 
 .keys {
     display: none;
-    display: flex;
     flex-direction: column;
 }
 
